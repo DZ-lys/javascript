@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const inventory = [
+      { name: "apples", quantity: 2 },
+      { name: "bananas", quantity: 0 },
+      { name: "cherries", quantity: 5 },
+    ];
+    let search = prompt("Ta haih ymaa oruulnuu");
+    let fountItem = inventory.find((fruit) => {
+     return fruit.name === search ;
+    });
+    if (fountItem === undefined) {alert("couldnt find what you are looking for")}
+    else {console.log("Tanii haisan ym", fountItem);}
+</script>
+</html>

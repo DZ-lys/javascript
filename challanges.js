@@ -141,3 +141,57 @@
 
 // Numbers(15);
 
+//SPREAD OPERATOR
+// let numbers = [3, 5, 6, 2, 1];
+// let numbers2 = [4, 6, 1, 10, 23];
+// //Hamgiin ih toog ol
+// let allNumbers = [...numbers, ...numbers2];
+// let max = allNumbers[0];
+// allNumbers.map((number) => {
+//   if (max < number) {
+//     max = number;
+//   }
+// });
+// console.log(max);
+
+// let person = {
+//   name: "Bilguun",
+//   age: 21,
+// };
+
+// let employee = {
+//   ...person,
+//   gender: "male",
+//   skill: "js",
+// };
+// console.log(employee);
+
+const names = [
+    { name: "Alice", age: 20 },
+    { name: "Bob", age: 25 },
+    { name: "John", age: 30 },
+    { name: "Jane", age: 35 },
+    { name: "Joe", age: 40 },
+  ];
+  const name2 = [
+    { name: "Andy", age: 20 },
+    { name: "Bilguun", age: 25 },
+    { name: "Jargalmaa", age: 30 },
+    { name: "Anguuch", age: 35 },
+    { name: "Mah", age: 40 },
+    { name: "Chinguun", age: 45 },
+  ];
+  // 1. FIND FIRST PERSON THAT NAME STARTS WITH 'C'
+  // 2. FIND FIRST PERSON THAT OLDER THAN 25
+ 
+  let allNames = [...names, ...name2];
+  
+  let firstC = allNames.find((name) => {
+    return name.name[0] === "C";
+  });
+  console.log(firstC);
+
+  let first25 = allNames.find((age) => {
+    return age.age >= 25;
+  });
+  console.log(first25);
