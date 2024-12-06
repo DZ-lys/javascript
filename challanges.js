@@ -166,32 +166,37 @@
 // };
 // console.log(employee);
 
-const names = [
-    { name: "Alice", age: 20 },
-    { name: "Bob", age: 25 },
-    { name: "John", age: 30 },
-    { name: "Jane", age: 35 },
-    { name: "Joe", age: 40 },
-  ];
-  const name2 = [
-    { name: "Andy", age: 20 },
-    { name: "Bilguun", age: 25 },
-    { name: "Jargalmaa", age: 30 },
-    { name: "Anguuch", age: 35 },
-    { name: "Mah", age: 40 },
-    { name: "Chinguun", age: 45 },
-  ];
-  // 1. FIND FIRST PERSON THAT NAME STARTS WITH 'C'
-  // 2. FIND FIRST PERSON THAT OLDER THAN 25
+// const names = [
+//     { name: "Alice", age: 20 },
+//     { name: "Bob", age: 25 },
+//     { name: "John", age: 30 },
+//     { name: "Jane", age: 35 },
+//     { name: "Joe", age: 40 },
+//   ];
+//   const name2 = [
+//     { name: "Andy", age: 20 },
+//     { name: "Bilguun", age: 25 },
+//     { name: "Jargalmaa", age: 30 },
+//     { name: "Anguuch", age: 35 },
+//     { name: "Mah", age: 40 },
+//     { name: "Chinguun", age: 45 },
+//   ];
+//   // 1. FIND FIRST PERSON THAT NAME STARTS WITH 'C'
+//   // 2. FIND FIRST PERSON THAT OLDER THAN 25
  
-  let allNames = [...names, ...name2];
+//   let allNames = [...names, ...name2];
   
-  let firstC = allNames.find((name) => {
-    return name.name[0] === "C";
-  });
-  console.log(firstC);
+//   let firstC = allNames.find((name) => {
+//     return name.name[0] === "C";
+//   });
+//   console.log(firstC);
 
-  let first25 = allNames.find((age) => {
-    return age.age >= 25;
-  });
-  console.log(first25);
+//   let first25 = allNames.find((age) => {
+//     return age.age >= 25;
+//   });
+//   console.log(first25);
+
+const contactsString = "Alice:99123456,Bob:99678901,Charlie:99543210,David:99321098,Eve:99234567,Frank:99456789,Grace:99789012,Hannah:99876543,Ivy:99987654,Jack:99111234" ;
+let information = contactsString.split(",");
+
+// Ene stringees nereern haihad zuvhun dugaarn garj ireh

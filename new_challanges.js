@@ -132,23 +132,27 @@ const employees = [
       ]
     }
   ];
-  let avaragePerformances = employees.map((ajiltan) => {
-    let sum = 0;
-    ajiltan.performance.map((onoo) => {
-      sum += onoo;
-    });
-    return {
-      name: ajiltan.name,
-      performance: sum / ajiltan.performance.length,
-    };
-  });
+  // let avaragePerformances = employees.map((ajiltan) => {
+  //   let sum = 0;
+  //   ajiltan.performance.map((onoo) => {
+  //     sum += onoo;
+  //   });
+  //   return {
+  //     name: ajiltan.name,
+  //     performance: sum / ajiltan.performance.length,
+  //   };
+  // });
 
-  console.log("avaragePerformances", avaragePerformances);
+  // console.log("avaragePerformances", avaragePerformances);
 
-  let goodPerformances = avaragePerformances.filter((ajiltan) => {
-    return ajiltan.performance >= 4.5;
-  });
-  let onlyNames = goodPerformances.map((ajiltan) => {
-    return ajiltan.name;
-  });
-  console.log("Good performance 4.5", onlyNames);
+  // let goodPerformances = avaragePerformances.filter((ajiltan) => {
+  //   return ajiltan.performance >= 4.5;
+  // });
+  // let onlyNames = goodPerformances.map((ajiltan) => {
+  //   return ajiltan.name;
+  // });
+  // console.log("Good performance 4.5", onlyNames);
+    
+// get employees that their salary is higher than 70k
+// get employees that their department is "Engineering"
+// get employees that they have completed both projects

@@ -49,7 +49,30 @@ let students = [
 // })
 // console.log(adults);
 
-let passedGrade = students.filter((student) => {
-    return student.grades >= 60;
-})
-console.log(passedGrade);
+// let passedGrade = students.filter((student) => {
+//     return student.grades >= 60;
+// })
+// console.log(passedGrade);
+
+// const getGrades = ((students) => {
+//     let neetArray = [];
+//     students.map((student) => {
+//         neetArray.push(...student.grades);
+//     });
+//     return neetArray;
+// });
+// const grades = getGrades(students);
+// console.log(grades)
+
+// const getGenderMales = (students) => students.filter((student) => student.gender == "male");
+// console.log(getGenderMales(students));
+
+// const Bstudents = (students) => students.filter((student) => student.name[0] == "B");
+// console.log(Bstudents(students));
+
+const Bnames = (students) => students.filter((student) => student.name == student.includes("b") || student.name == student.includes("B"));
+console.log(Bnames(students));
+//get students that their name starts with B later
+//get students that their name includes B letter // name.include() method
+//get students that their name length is longer than 5 characters
+//get students that their age is odd number
